@@ -23,7 +23,8 @@
         "formatter": "detailed",
         "filename": "logs/app.log",
         "maxBytes": 5242880,
-        "backupCount": 3
+        "backupCount": 3,
+        "encoding": "utf-8"
       }
     },
     "loggers": {
