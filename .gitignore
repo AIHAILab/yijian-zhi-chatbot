@@ -8,7 +8,8 @@ wheels/
 
 # Virtual environments
 .venv
-
 .env
-.chainlit/
+
+# Chainlit
+.chainlit/translations/
 .files/
