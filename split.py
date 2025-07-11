@@ -42,16 +42,16 @@ def split_docx(input_dir: str, output_dir: str) -> None:
                     if current_filename and current_content:
                         filepath = output_dir_path / f"{current_filename}.txt"
                         with filepath.open("w", encoding="utf-8") as f:
-                            f.write(f"《夷堅志》南宋洪邁撰\n篇章 {current_content.strip()}")
+                            f.write(f"《夷堅志》{current_content.strip()}")
                     current_filename = f"{file_counter:08d}"
                     file_counter += 1
-                    current_content = paragraph.text + "\n"
+                    current_content = paragraph.text + "(南宋洪邁撰)："
                 elif current_filename:
-                    current_content += paragraph.text + "\n"
+                    current_content += paragraph.text
         if current_filename and current_content:
             filepath = output_dir_path / f"{current_filename}.txt"
             with filepath.open("w", encoding="utf-8") as f:
-                f.write(f"《夷堅志》南宋洪邁撰\n篇章 {current_content.strip()}")
+                f.write(f"《夷堅志》{current_content.strip()}")
 
         logger.info(
             f"All Word documents in '{input_dir_path}' have been successfully split and saved to '{output_dir_path}'."
