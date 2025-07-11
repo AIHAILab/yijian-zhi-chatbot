@@ -10,15 +10,19 @@ class Settings(BaseSettings):
     # Data source
     data_source_original_dir: str = "data_source/original"
     data_source_splitted_dir: str = "data_source/splitted"
+    vector_store_dir: str = "qdrant"
 
-    # Langsmith settings
+    # Langsmith
     langsmith_tracing: bool = False
     langsmith_endpoint: str | None = "https://api.smith.langchain.com"
     langsmith_project: str | None = "yijian-zhi-chatbot"
     langsmith_api_key: str | None = None
 
-    # LLM provider
+    # OpenAI
     openai_api_key: str
+    embedding_model: str = "text-embedding-3-large"
+    llm_model: str = "gpt-4o-mini"
+    dimensions: int = 3072
 
 
 settings = Settings()  # type: ignore[missing-required-argument]
