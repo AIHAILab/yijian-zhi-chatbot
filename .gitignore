@@ -6,10 +6,12 @@ dist/
 wheels/
 *.egg-info
 
-# Virtual environments
+# Environments
 .venv
 .env
 
 # Chainlit
-.chainlit/translations/
-.files/
+.files
+
+# Logging
+logs
