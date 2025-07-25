@@ -1,14 +1,3 @@
-# Welcome to Chainlit! 🚀🤖
+# 歡迎使用 [夷問](/)
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
-
-## Useful Links 🔗
-
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
-
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
-
-## Welcome screen
-
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+「夷問」是一款基於 [檢索增強生成（RAG, Retrieval-Augmented Generation）技術](https://arxiv.org/pdf/2005.11401) 的聊天機器人。它能夠在使用者提問時，自動檢索《夷堅志》相關篇章，並利用這些檢索到的資料輔助大型語言模型回答問題，從而有效提升回覆的準確性與豐富度。本專案的資料來源為 [中國哲學書電子化計劃](https://ctext.org)。

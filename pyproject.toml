@@ -1,7 +1,7 @@
 [project]
 name = "yijian-zhi-chatbot"
 version = "0.1.0"
-description = "Add your description here"
+description = "A RAG chatbot based on OpenAI API that can answer questions about Yijian Zhi(夷堅志)."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -19,8 +19,7 @@ dependencies = [
 dev = [
     "pyright>=1.1.401",
     "pytest>=8.3.5",
-    "rich>=14.0.0",
-    "ruff>=0.11.8",
+    "ruff>=0.12.5",
 ]
 
 [tool.pyright]
