@@ -1,7 +1,9 @@
 # Yijian Zhi Chatbot
 A RAG chatbot based on OpenAI API that can answer questions about "Yijian Zhi" (夷堅志).
 
-![App Banner](./public/demo.png)
+![App Banner 1](./public/demo_1.png)
+
+![App Banner 2](./public/demo_2.png)
 
 ## Installation
 
