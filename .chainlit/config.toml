@@ -36,7 +36,7 @@ edit_message = true
 
 # Authorize users to spontaneously upload files with messages
 [features.spontaneous_file_upload]
-    enabled = true
+    enabled = false
     # Define accepted file types using MIME types
     # Examples:
     # 1. For specific file types:
@@ -66,9 +66,9 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "夷堅志聊天機器人"
+name = "\u5937\u554f"
 
-# default_theme = "dark"
+default_theme = "light"
 
 # layout = "wide"
 
@@ -78,7 +78,7 @@ name = "夷堅志聊天機器人"
 # description = ""
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
-cot = "full"
+cot = "tool_call"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.

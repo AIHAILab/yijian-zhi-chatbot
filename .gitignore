@@ -11,7 +11,8 @@ wheels/
 .env
 
 # Chainlit
-.chainlit/translations
+.chainlit/translations/*
+!.chainlit/translations/zh-TW.json
 .files
 
 # Logging
