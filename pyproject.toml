@@ -1,6 +1,6 @@
 [project]
 name = "yijian-zhi-chatbot"
-version = "0.1.0"
+version = "0.2.0"
 description = "A RAG chatbot based on OpenAI API that can answer questions about Yijian Zhi(夷堅志)."
 readme = "README.md"
 requires-python = ">=3.13"
