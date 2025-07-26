@@ -24,5 +24,9 @@ class Settings(BaseSettings):
     llm_model: str = "gpt-4o-mini"
     dimensions: int = 3072
 
+    # Server
+    host: str = "0.0.0.0"
+    port: int = 8000
+
 
 settings = Settings()  # type: ignore[missing-required-argument]
