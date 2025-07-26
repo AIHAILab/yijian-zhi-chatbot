@@ -1,0 +1,12 @@
+services:
+  app:
+    image: yijian-zhi-chatbot:latest
+    container_name: yijian-zhi-chatbot
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    restart: unless-stopped

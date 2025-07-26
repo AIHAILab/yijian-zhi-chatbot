@@ -1,3 +1,4 @@
+import subprocess
 from typing import cast
 
 import chainlit as cl
@@ -9,6 +10,7 @@ from langchain_openai import ChatOpenAI
 from langchain_qdrant import QdrantVectorStore
 
 from index import get_or_create_vector_store
+from settings import settings
 
 _SHARED_VECTOR_STORE: QdrantVectorStore | None = None
 
@@ -59,3 +61,7 @@ async def on_message(message: cl.Message):
         await msg.stream_token(chunk)
 
     await msg.send()
+
+
+if __name__ == "__main__":
+    subprocess.run(["chainlit", "run", "app.py", "-h", "--host", str(settings.host), "--port", str(settings.port)])

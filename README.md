@@ -15,20 +15,35 @@ Follow these steps to install and set up:
     cd ./yijian-zhi-chatbot/
     ```
 
-2.  **Install uv(if not already installed):**
-    This project uses [uv](https://github.com/astral-sh/uv) to manage the virtual environment and dependencies. If you don't have uv installed, follow the [official installation guide](https://docs.astral.sh/uv/getting-started/installation/).
-
-3.  **Configure Environment Variables:**
+2.  **Configure Environment Variables:**
     Copy the example environment file:
     ```bash
     cp .env.example .env
     ```
-    Then, open the `.env` file in the `backend` directory with a text editor and fill in the required configuration values (e.g., OPENAI API key, LangSmith API key, etc.).
+    Then, open the `.env` file with a text editor and fill in the required configuration values (e.g., OPENAI API key, LangSmith API key, etc.).
 
+3.  **Run the application:**
 
-3.  **Start the Application:**
-    In the `backend` directory, run:
+    You can choose one of the following methods to run the application.
+
+    ### Option 1: Docker (Recommended)
+    
+    This is the recommended way to run the application.
+
+    **Build and Run with Docker Compose:**
+    ```bash
+    docker-compose up --build
+    ```
+    The app will start and run at http://localhost:8000
+    
+    ### Option 2: Manual Setup (without Docker)
+    
+    **1. Install uv(if not already installed):**
+    This project uses [uv](https://github.com/astral-sh/uv) to manage the virtual environment and dependencies. If you don't have uv installed, follow the [official installation guide](https://docs.astral.sh/uv/getting-started/installation/).
+
+    **2. Start the Application:**
+    Run:
     ```bash
     uv run chainlit run app.py --port 8000
     ```
-    The backend will start and run at http://localhost:8000
+    The app will start and run at http://localhost:8000

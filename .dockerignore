@@ -1,3 +1,11 @@
+# IDE
+.vscode/
+
+# Git
+.git
+.gitignore
+.dockerignore
+
 # Python-generated files
 __pycache__/
 *.py[oc]
@@ -11,9 +19,16 @@ wheels/
 .env
 
 # Chainlit
-.chainlit/translations/*
+.chainlit/translations/
 !.chainlit/translations/zh-TW.json
 .files
 
 # Logging
 logs
+
+# Documentation
+README.md
+public/demo_*.png
+
+# Unuse data source
+data_source/
