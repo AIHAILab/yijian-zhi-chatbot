@@ -44,6 +44,6 @@ Follow these steps to install and set up:
     **2. Start the Application:**
     Run:
     ```bash
-    uv run run app.py
+    uv run app.py
     ```
     The app will start and run at http://localhost:8000
